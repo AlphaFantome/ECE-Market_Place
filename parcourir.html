@@ -6,7 +6,7 @@
 </head>
 
 <div class ="wrapper">
-
+	<form action="parcourir.php" method="POST">
 <body>
 
     <div id="header">
@@ -27,6 +27,17 @@
     </div>
     <div id="section">
 
+    	<select id="SelectionAchat">
+    		<option value="AchatIm">Achat Immédiat</option>
+    		<option value="vendeur-acheteur">Transaction Vendeur-Acheteur</option>
+    		<option value="MeilleurOffre">MeilleurOffre</option> 		
+    	</select>
+    	<br>
+    	<select id="Trie">
+    		<option value="MeubleArt">Meubles d'art</option>
+    		<option value="AccessoireVIP">Accessoire VIP</option>
+    		<option value="scolaire">Matériel scolaire</option> 		
+    	</select>
 	</div>
 
 	<div id="footer">
@@ -39,7 +50,6 @@
 		ECE.MarketPlace@gmail.com</a>
 	</div>
 </body>
-
+</form>
 </div>
-
 </html>
