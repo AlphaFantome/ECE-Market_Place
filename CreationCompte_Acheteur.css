@@ -8,7 +8,7 @@ body {
   font-family: Georgia, "Times New Roman", Times, serif;
   padding: 20px;
 }
-form#paiement {
+form#inscription {
   background: #9cbc2c;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -16,14 +16,14 @@ form#paiement {
   padding: 20px;
   width: 400px;
 }
-form#paiement fieldset {
+form#inscription fieldset {
   border: none;
   margin-bottom: 10px;
 }
-form#paiement fieldset:last-of-type {
+form#inscription fieldset:last-of-type {
   margin-bottom: 0;
 }
-form#paiement legend {
+form#inscription legend {
   color: #384313;
   font-size: 16px;
   font-weight: bold;
@@ -31,13 +31,13 @@ form#paiement legend {
   text-shadow: 0 1px 1px #c0d576;
 }
 
-form#paiement fieldset fieldset legend {
+form#inscription fieldset fieldset legend {
   color: #111111;
   font-size: 13px;
   font-weight: normal;
   padding-bottom: 0;
 }
-form#paiement ol li {
+form#inscription ol li {
   background: #b9cf6a;
   background: rgba(255,255,255,.3);
   border-color: #e3ebc3;
@@ -52,27 +52,27 @@ form#paiement ol li {
   padding: 5px 10px;
   margin-bottom: 2px;
 }
-form#paiement ol ol li {
+form#inscription ol ol li {
   background: none;
   border: none;
   float: left;
 }
-form#paiement label {
+form#inscription label {
   float: left;
   font-size: 13px;
   width: 110px;
 }
-form#paiement fieldset fieldset label {
+form#inscription fieldset fieldset label {
   background:none no-repeat left 50%;
   line-height: 20px;
   padding: 0 0 0 30px;
   width: auto;
 }
-form#paiement fieldset fieldset label:hover {
+form#inscription fieldset fieldset label:hover {
   cursor: pointer;
 }
-form#paiement input:not([type=radio]),
-form#paiement textarea {
+form#inscription input:not([type=radio]),
+form#inscription textarea {
   background: #ffffff;
   border: none;
   -moz-border-radius: 3px;
@@ -84,15 +84,15 @@ form#paiement textarea {
   padding: 5px;
   width: 200px;
 }
-form#paiement input:not([type=submit]):focus,
-form#paiement textarea:focus {
+form#inscription input:not([type=submit]):focus,
+form#inscription textarea:focus {
   background: #eaeaea;
 }
-form#paiement input[type=radio] {
+form#inscription input[type=radio] {
   float: left;
   margin-right: 5px;
 }
-form#paiement button {
+form#inscription button {
   background: #384313;
   border: none;
   -moz-border-radius: 20px;
@@ -108,7 +108,7 @@ form#paiement button {
   text-shadow: 0 1px 1px #000000;
   text-transform: uppercase;
 }
-form#paiement button:hover {
+form#inscription button:hover {
   background: #1e2506;
   cursor: pointer;
 }

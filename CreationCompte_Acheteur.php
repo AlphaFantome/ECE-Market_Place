@@ -1,56 +1,50 @@
 <?php
-$nom=$_POST['nom'];
-$prenom=$_POST['prenom'];
-$email=$_POST['email'];
-$telephone=$_POST['telephone'];
-$adresse=$_POST['adresse'];
-$codepostal=$_POST['codepostal'];
-$pays=$_POST['pays'];
-$adresse2=$_POST['adresse2'];
-$type_de_carte=$_POST['type_de_carte'];
-$numero_de_carte=$_POST['numero_de_carte'];
-$DateExpi=$_POST['DateExpi'];
-$securite=$_POST['securite'];
-$nom_porteur=$_POST['nom_porteur'];
+	$nom=$_POST['nom'];
+	$ville=$_POST['ville'];
+	$prenom=$_POST['prenom'];
+	$email=$_POST['email'];
+	$telephone=$_POST['telephone'];
+	$adresse=$_POST['adresse'];
+	$codepostal=$_POST['codepostal'];
+	$pays=$_POST['pays'];
+	$adressefact=$_POST['adressefact'];
+	$type_de_carte=$_POST['type_de_carte'];
+	$numero_de_carte=$_POST['numero_de_carte'];
+	$DateExpi=$_POST['DateExpi'];
+	$securite=$_POST['securite'];
+	$nom_porteur=$_POST['nom_porteur'];
 
 
-$host ="localhost";
-$dbUsername="root";
-$dbPassword="";
-$dbname="ece market-place"
+	
+	$database = "ece market-place";
+	$db_handle = mysqli_connect('localhost', 'root', '');
+	$db_found = mysqli_select_db($db_handle, $database)
 
-$conn=new mysqli($host,$dbUsername,$dbPassword,$dbname);
-	if(mysqli_connect_error())
+		// Create connection
+
+// Check connection
+
+
+$sql = "INSERT INTO acheteur (nom,prenom,adresse,adresseFact,email,ville,codePostal,pays,telephone,typeCarte,numeroCarte,nomProprietaire,dateExpiration,cryptogramme)
+VALUES ('$nom','$prenom','$adresse','$adressefact','$email','$ville','$codepostal','$pays','$telephone','$type_de_carte','$numero_de_carte','$nom_porteur','$DateExpi','$securite')";
+
+
+$result = mysqli_query($db_handle, $sql);
+echo "<h4>Informations sur le nouveau compte ajouté:</h4>";
+echo "<table border='1'>";
+echo "<tr>";
+echo "<th>" . "Nom" . "</th>";
+echo "<th>" . "Prénom" . "</th>";
+echo "<th>" . "adresse" . "</th>";
+echo "</tr>";
+while ($data = mysqli_fetch_assoc($result)) 
 	{
-		die('Connect Error('.mysqli_conect_error().')'.mysqli_connect_error());
+		echo "<tr>";
+		echo "<td>" . $data['nom']  . "</td>";
+		echo "<td>" . $data['prenom'] . "</td>";
+		echo "<td>" . $data['adresse'] . "</td>";
 	}
-	else
-	{
-		$SELECT = "SELECT email From register Where email = ? Limit 1";
-		$INSERT = "INSERT Into register (nom,prenom,email,telephone,adresse,codepostal,pays,adresse2,type_de_carte,numero_de_carte,DateExpi,securite,nom_porteur) values(?,?,?,?,?,?,?,?,?,?,?,?,?)";
-		//Prepare statement
-		$stmt = $conn -> prepare($SELECT);
-		$stmt -> bind_param("s"$email);
-		$stmt -> execute();
-		$stmt ->bind_result($email);
-		$stmt ->store_result();
-		$rnum=$stmt ->num_rows;
-		if($rnum==0)
-		{
-			$stmt->close();
+	echo "</table>";
 
-			$stmt = $conn->prepare($INSERT);
-			$stmt->bind_param("sssisisssiiis", $nom,$prenom,$email,$telephone,$adresse,$codepostal,$pays,$adresse2,$type_de_carte,$numero_de_carte,$DateExpi,$securite,$nom_porteur);
-			$stmt->execute();
-			echo "Votre inscription à bien été faite !";
-
-		}
-		else
-		{
-			echo "Votre adresse mail est déjà utilisé";
-		}
-		$stmt->close();
-		$conn->close();
-
-	}
+mysqli_close($db_handle);
 ?>
