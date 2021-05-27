@@ -45,37 +45,10 @@ h1 {
 
 }
 
-#MA{
-
-	width: 550px;
-    margin: 0 auto;
-    border: 7px solid black;
-    background-color: #9966CC;
-
-}
-
-#AV{
-
-	width: 550px;
-    margin: 0 auto;
-    border: 7px solid black;
-    background-color: #7FFFD4;
-
-}
-
-#MS{
-
-	width: 550px;
-    margin: 0 auto;
-    border: 7px solid black;
-    background-color:#FF9966;
-
-}
-
-.case{
-    
-    width: 1800px;
-    height: 250px;
+#corps{
+    background: #A1CAF1;
     border: 2px solid black;
+    text-align: center;
+    margin-top: 30px;
 }
 
