@@ -40,7 +40,8 @@ h1 {
  font-size: .80em;
  font-style: italic;
  bottom: 0;
- width: 100%;
+ width: 100%; 
+ text-align: center;
 }
 
 #compte ol li {

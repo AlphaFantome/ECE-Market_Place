@@ -16,6 +16,9 @@
 
 <body>
 
+
+    <form action="notifications.php" method="post">
+
 	<div id="header">
 
 	<h1>ECE MarketPlace</h1>
@@ -41,26 +44,26 @@
 
     	<select id="SelectionAchat">
     		<p>Choisissez le type d'achats désirer:</p>
-    		<option value="AchatIm">Achat Immédiat</option>
-    		<option value="vendeur-acheteur">Transaction Vendeur-Acheteur</option>
-    		<option value="MeilleurOffre">MeilleurOffre</option> 
-    		<option value="Tous">Tous</option>		
+    		<option value="AchatIm" name="AchatIm">Achat Immédiat</option>
+    		<option value="VendeurAcheteur"name="VendeurAcheteur">Transaction Vendeur-Acheteur</option>
+    		<option value="MeilleurOffre" name="MeilleurOffre">MeilleurOffre</option> 
+    		<option value="Tous1" name="Tous1">Tous</option>		
     	</select>
     	
     	<p>Choisissez le type d'articles désirer:</p>
     	<select id="Trie">
-    		<option value="MeubleArt">Meubles d'art</option>
-    		<option value="AccessoireVIP">Accessoire VIP</option>
-    		<option value="scolaire">Matériel scolaire</option> 
-    		<option value="Tous">Tous</option>		
+    		<option value="MeubleArt" name="MeubleArt">Meubles d'art</option>
+    		<option value="AccessoireVIP" name="AccessoireVIP">Accessoire VIP</option>
+    		<option value="scolaire" name="scolaire">Matériel scolaire</option> 
+    		<option value="Tous2" name="Tous2">Tous</option>		
     	</select>
     	
     	<p>Choisissez le budget désirer:</p>
     	<select id="Budget">
-    		<option value="PrixBas">Moins de 25€</option>
-    		<option value="PrixMoyen">Entre 25€ et 75€</option>
-    		<option value="PrixElevé">Supérieur à 75€</option> 	
-    		<option value="Tous">Tous</option>	
+    		<option value="PrixBas" name="PrixBas">Moins de 25€</option>
+    		<option value="PrixMoyen" name="PrixMoyen">Entre 25€ et 75€</option>
+    		<option value="PrixElevé" name="PrixElevé">Supérieur à 75€</option> 	
+    		<option value="Tous3" name="Tous3">Tous</option>	
     	</select>
 
 	</div>
@@ -76,9 +79,7 @@
 </div>
 
 	<div id="footer"><br>
-		10 rue de l'Eglise<br>
-		75015 Paris <br>
-		Téléphone: (+33) 07 89 56 23 17<br>	
+		10 rue de l'Eglise, 75015 Paris - Téléphone: (+33) 07 89 56 23 17<br>	
 		Copyright &copy; 2021 ECE MarketPlace<br>	
 		Mail:<a href="mailto:ECE.MarketPlace@gmail.com">
 		ECE.MarketPlace@gmail.com</a>
