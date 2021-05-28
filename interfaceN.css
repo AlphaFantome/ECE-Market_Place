@@ -41,8 +41,16 @@ h1 {
  font-style: italic;
  position: absolute;
  bottom: 0;
- width: 100%;
+ width: 100%; 
  text-align: center;
 
+}
+
+#corps{
+    background: #A1CAF1;
+    border: 2px solid black;
+    text-align: center;
+    margin-top: 30px;
+    font: italic 18px Georgia, "Times New Roman", Times, serif;
 }
 

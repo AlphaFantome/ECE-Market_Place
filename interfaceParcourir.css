@@ -1,0 +1,74 @@
+h1 {
+ text-align: center;
+ color: white;
+ background-color: #666699;
+ font-size: 30px;
+ border-radius: 10px;
+}
+
+#navigation{
+	text-align: center;
+}
+
+#section {
+ position: center;
+ height: 200px;
+ width: 300px;
+ margin: auto;
+ margin-top: 50px;
+}
+
+#sectionChoix {
+ margin-left: 15px;
+ margin-top: 50px;
+}
+
+#footer{
+ font-size: .80em;
+ font-style: italic;
+ bottom: 0;
+ width: 100%; 
+ text-align: center;
+
+}
+
+#aff{
+
+    margin-left: 250px;
+    width: auto;
+    height: 650px;
+    border: 2px solid black;
+    background-color: #CCCCFF;
+}
+
+#case1{
+
+    margin-left: 10px;
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+    background-color: white;
+
+}
+
+#case2{
+
+    margin-left: 10px;
+    margin-top: 25px;
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+    background-color: white;
+
+}
+
+#case3{
+
+    margin-left: 10px;
+    margin-top: 25px;
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+    background-color: white;
+
+}

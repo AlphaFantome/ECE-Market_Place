@@ -3,6 +3,7 @@
 <head>
     <title>Parcourir</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="interfaceParcourir.css">
 </head>
 
 <div class ="wrapper">
@@ -25,7 +26,7 @@
         <a href="compte.html"><img src = "images/img_compte.png"></a>
 
     </div>
-    <div id="section">
+    <div id="sectionChoix">
 
     	<select id="SelectionAchat">
     		<option value="AchatIm">Achat Immédiat</option>
@@ -40,14 +41,59 @@
     	</select>
 	</div>
 
-	<div id="footer">
-		Vous pouvez nous contactez aux coordonnées suivante:<br>
-		10 rue de l'Eglise<br>
-		75015 Paris <br>
-		Téléphone: (+33) 07 89 56 23 17<br>	
-		Copyright &copy; 2021 ECE MarketPlace<br>	
-		Mail:<a href="mailto:ECE.MarketPlace@gmail.com">
-		ECE.MarketPlace@gmail.com</a>
+<!--
+    <div id="sectionPresentation">
+
+        <table border=1>
+
+            <tr id="MA">
+                <td>  MeubleArt  </td>
+                <td><div id="c" class="case"> </div></td>
+            </tr>
+
+            <tr id="AV">
+                <td>Accessoire VIP</td>
+                <td><div id="c" class="case"> </div></td>
+            </tr>
+
+            <tr id="MS">
+                <td>Matériel scolaire</td>  
+                <td><div id="c" class="case"> </div></td>              
+            </tr>
+            
+        </table>
+
+       
+    </div>-->
+
+    <div id="aff">
+
+        <p> Voici les articles qui correspondent à votre sélection:</p>
+
+        <table>
+                <tr id="prod">
+                     <td><div id="case1">Image du produit 1</div></td>
+                     <td>Description produit 1</td>
+                </tr>
+
+                <tr id="prod2">
+                     <td><div id="case2">Image du produit 2</div></td>
+                     <td>Description produit 2</td>
+                </tr>
+
+                <tr id="prod3">
+                     <td><div id="case3">Image du produit 3</div></td>
+                     <td>Description produit 3</td>
+                </tr>
+        </table>
+
+    </div>
+
+	<div id="footer"><br>
+		10 rue de l'Eglise, 75015 Paris - Téléphone: (+33) 07 89 56 23 17<br> 
+        Copyright &copy; 2021 ECE MarketPlace<br>   
+        Mail:<a href="mailto:ECE.MarketPlace@gmail.com">
+        ECE.MarketPlace@gmail.com</a>
 	</div>
 </body>
 </form>
