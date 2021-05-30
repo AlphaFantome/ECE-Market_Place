@@ -29,8 +29,8 @@ Navigation::init_navigation();
             <form class="needs-validation" method="post" action="<?= Navigation::register_handler() ?>">
                 <div class="form-group">
                     <label for="userName">Nom : </label>
-                    <input type="text" name="name" class="form-control" placeholder="full name" id="userName" required>
-                    <small id="nameHelp" class="form-text text-muted"><i class="fas text-primary fa-info"></i> Enter
+                    <input type="text" name="name" class="form-control" placeholder="nom complet" id="userName" required>
+                    <small id="nameHelp" class="form-text text-muted"><i class="fas text-primary fa-info"></i>
                         Entrer votre nom complet.</small>
                 </div>
                 <br>

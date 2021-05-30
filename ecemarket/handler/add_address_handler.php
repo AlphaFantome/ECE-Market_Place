@@ -59,4 +59,4 @@ if (
             echo "<script>window.location = '{$account_page}';</script>";
             break;
     }
-} else echo '<strong>WTF Why you do that ?</strong>';
+} else echo '<strong>Why you do that ?</strong>';

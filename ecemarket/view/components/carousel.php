@@ -22,12 +22,12 @@
 
         <!-- Single item -->
         <div class="carousel-item">
-            <img src="static/images/hire_suit.png" class="d-block w-100" alt="Hire Suit"/>
+            <img src="static/images/test1.jpg" class="d-block w-100"/>
         </div>
 
         <!-- Single item -->
         <div class="carousel-item">
-            <img src="static/images/hire_sneaker.jpg" class="d-block w-100" alt="..."/>
+            <img src="static/images/test4.jpg" class="d-block w-100"/>
         </div>
     </div>
     <!-- Inner -->
